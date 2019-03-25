@@ -57,7 +57,9 @@ For installing the package from git hub repository you can use function > [insta
 
 
 ```
-
+patternRebus <- capture(optional(DGT) %R% DGT) %R%  
+        optional(SPC) %R% capture(or("YO", "YR", "MO")) %R%
+        optional(SPC) %R% capture(or("M", "F"))
 ```
 
 `@instructions`
@@ -79,8 +81,8 @@ library(_____)
 # inspect neiss::injuries
 str(____)
 
-# Create new variable with narrative column of injuries: narr
-narr <- neiss::injuries$narrative
+# Extract narrative column from neiss::injuries: narr
+____ <- neiss::injuries_____
 
 # Create pattern with Rebus package (optional for help reasons)
 patternRebus <- capture(optional(DGT) %R% DGT) %R%  
