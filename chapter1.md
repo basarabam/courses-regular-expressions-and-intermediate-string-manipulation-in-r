@@ -61,7 +61,7 @@ For installing the package from git hub repository you can use function > [insta
 ```
 
 `@instructions`
-- Load devtools package into the working enverement
+- Load > neiss package into the working environment, and check
 
 `@hint`
 
