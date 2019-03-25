@@ -85,7 +85,7 @@ patternRebus <- capture(optional(DGT) %R% DGT) %R%
 
 `@pre_exercise_code`
 ```{r}
-
+library("rebus")
 ```
 
 `@sample_code`
