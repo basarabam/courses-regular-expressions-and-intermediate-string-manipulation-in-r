@@ -41,3 +41,72 @@ This is an example exercise.
 ```{r}
 
 ```
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: NormalExercise
+key: 01bd99578e
+xp: 100
+```
+
+Construct a regular expression to pool out the age, type of time measurement and the gender from the dataset and then to convert your results to data frame.
+For installing the package from git hub repository you can use function > [install_github()]> (https://www.rdocumentation.org/packages/devtools/versions/1.12.0/topics/install_github) developed by Hadley Wickham for install a package directly from GitHub, with ability to install multiple packages. The installation of GitHub package > has been done for you
+
+
+```
+
+```
+
+`@instructions`
+- Load devtools package into the working enverement
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+# Load nisse library
+library(_____)
+
+# inspect neiss::injuries
+str(____)
+
+# Create new variable with narrative column of injuries: narr
+narr <- neiss::injuries$narrative
+
+# Create pattern with Rebus package (optional for help reasons)
+patternRebus <- capture(optional(DGT) %R% DGT) %R%  
+        optional(SPC) %R% capture(or("YO", "YR", "MO")) %R%
+        optional(SPC) %R% capture(or("M", "F"))
+
+# Create pattern to capture "()" one optional digit "[\d]?" and one digit "[\d]",
+# then optional space "[\s]?" then capture "()" unit YO or YR or MO as non capturing
+# group "(?:YO|YR|MO)" then again optional space "[/s]?" and capture
+# "()" gender M or F "(?:M|F)" as non capturing group "(?:)": RegExPatt
+# do not forget to escape \ in regex string.
+pattern <- regex(as.character("([\\d]?\\d)[\\s]?((?:YO|YR|MO))[\\s]?((?:M|F))"))
+
+# Convert age, unit and gender, from narr to datafrane with stringr match function: DF_narr 
+DF_narr <- as.data.frame(str_match(narr, pattern = pattern)[,2:4])
+
+#Name the columns of DF_narr  
+colnames(DF_narr) <- c("Age", "Unit", "Gender")
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
+```
