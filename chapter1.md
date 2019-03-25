@@ -112,3 +112,16 @@ colnames(DF_narr) <- c("Age", "Unit", "Gender")
 ```{r}
 
 ```
+
+---
+
+## Formatting strings
+
+```yaml
+type: VideoExercise
+key: 6b700ef407
+xp: 50
+```
+
+`@projector_key`
+b830b2075b68dfb75dfcbf2e59156135
