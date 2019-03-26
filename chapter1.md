@@ -93,14 +93,14 @@ str(____)
 # Extract narrative column from neiss::injuries: narr
 ____ <- neiss::injuries_____
 
-# Create regular expression, to capture age, unit and group: RegExPatt
+# Create regular expression, to capture age, unit and group: pattern
 pattern <- "_____"
 
 # Convert age, unit and gender, from narr to dataframe with stringr match function: DF_narr 
-DF_narr <- as.data.frame(str_match(narr, pattern = pattern)[,2:4])
+DF_narr <- as.data.frame(______(narr, pattern = pattern)[____])
 
 #Name the columns of DF_narr  
-colnames(DF_narr) <- c("Age", "Unit", "Gender")
+_____(DF_narr) <- c("Age", "Unit", "Gender")
 ```
 
 `@solution`
