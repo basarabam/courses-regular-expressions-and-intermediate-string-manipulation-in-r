@@ -69,7 +69,7 @@ Construct a regular expression to pool out the age, type of time measurement and
 For installing the package from git hub repository you can use function  [install_github()] (https://www.rdocumentation.org/packages/devtools/versions/1.12.0/topics/install_github) developed by Hadley Wickham for install a package directly from GitHub, with ability to install multiple packages. The installation of GitHub package > has been done for you. 
 
 `@instructions`
-- Inspect neiss::injuries table and extract narrative column as >narr>  
+- Inspect neiss::injuries table and extract narrative column as > narr >  
 - Construct the regular expression > pattern to capture "()" then one optional digit "[\d]?" and one digit "[\d]",then optional space "[\s]?" then capture "()" unit YO or YR or MO as non capturing group "(?:YO|YR|MO)" then again optional space "[/s]?" and capture "()" gender M or F "(?:M|F)" as non capturing group "(?:)"do not forget to escape \ in regex string.
 
 `@hint`
