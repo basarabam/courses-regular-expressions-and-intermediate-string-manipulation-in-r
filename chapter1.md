@@ -57,7 +57,7 @@ This is an example exercise.
 
 ---
 
-## Insert exercise title here
+## Extracting data from strings
 
 ```yaml
 type: NormalExercise
@@ -85,7 +85,7 @@ patternRebus <- capture(optional(DGT) %R% DGT) %R%
 
 `@pre_exercise_code`
 ```{r}
-library("rebus")
+
 ```
 
 `@sample_code`
