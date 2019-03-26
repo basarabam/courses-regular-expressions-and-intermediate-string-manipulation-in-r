@@ -67,11 +67,12 @@ xp: 100
 
 Construct a regular expression to pool out the age, type of time measurement and the gender from the dataset and then to convert your results to data frame.
 For installing the package from git hub repository you can use function  [install_github()] (https://www.rdocumentation.org/packages/devtools/versions/1.12.0/topics/install_github) developed by Hadley Wickham for install a package directly from GitHub, with ability to install multiple packages. The installation of GitHub package > has been done for you. 
+Use console, to check the intermediate results
 
 `@instructions`
 - Inspect `neiss::injuries` table and extract narrative column as `narr`   
 - Construct the regular expression `pattern` to capture "()" then one optional digit "[\d]?" and one digit "[\d]",then optional space "[\s]?" then capture "()" unit YO or YR or MO as non capturing group "(?:YO|YR|MO)" then again optional space "[/s]?" and capture "()" gender M or F "(?:M|F)" as non capturing group "(?:)
-- Create data frame `df_narr` containing Age, Unit and Gender columns, created from [str_match](https://www.rdocumentation.org/packages/stringr/versions/1.4.0/topics/str_match) function using the `pattern` variable.
+- Create data frame `df_narr` containing Age, Unit and Gender columns, created from [str_match()](https://www.rdocumentation.org/packages/stringr/versions/1.4.0/topics/str_match) function using the `pattern` variable.
 - Name the columns of `df_narr` data frame.
 
 `@hint`
