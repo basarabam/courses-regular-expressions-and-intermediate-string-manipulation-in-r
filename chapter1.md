@@ -66,7 +66,7 @@ xp: 100
 ```
 
 Construct a regular expression to pool out the age, type of time measurement and the gender from the dataset and then to convert your results to data frame.
-For installing the package from git hub repository you can use function  [install_github()] (https://www.rdocumentation.org/packages/devtools/versions/1.12.0/topics/install_github) developed by Hadley Wickham for install a package directly from GitHub, with ability to install multiple packages. The installation of GitHub package > has been done for you. 
+For installing the package from git hub repository you can use function  [install_github()] (https://www.rdocumentation.org/packages/devtools/versions/1.12.0/topics/install_github) developed by Hadley Wickham for install a package directly from GitHub, with ability to install multiple packages. The installation of GitHub package has been done for you. 
 Use console, to check the intermediate results
 
 `@instructions`
