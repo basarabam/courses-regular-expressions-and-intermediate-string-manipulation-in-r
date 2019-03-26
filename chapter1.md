@@ -76,9 +76,6 @@ then again optional space "[/s]?" and
 capture "()" gender M or F "(?:M|F)" as non capturing group "(?:)"
 do not forget to escape \ in regex string.
 
-
-
-
 `@instructions`
 - Load > neiss package into the working environment, and check
 
