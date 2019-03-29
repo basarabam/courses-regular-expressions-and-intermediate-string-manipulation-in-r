@@ -4,7 +4,7 @@ description: 'Chapter description goes here.'
 free_preview: true
 ---
 
-## Formatting strings
+## 2.4. Replacing strings using regular expressions
 
 ```yaml
 type: VideoExercise
